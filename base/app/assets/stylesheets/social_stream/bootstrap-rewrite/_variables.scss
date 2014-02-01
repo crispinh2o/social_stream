@@ -50,8 +50,16 @@ $linkColorHover:        darken($linkColor, 15%) !default;
 
 // Typography
 // -------------------------
-$sansFontFamily:        "OpenSans", Arial, sans-serif;
-$sansFontFamilyLight:   "OpenSansLight", Arial, sans-serif;
+$sansFontFamily:        "fira_sans_otregular", Arial, sans-serif;
+$sansFontFamily_italic:        "fira_sans_otregular_italic", Arial, sans-serif;
+$sansFontFamilyLight:   "fira_sans_otlight", Arial, sans-serif;
+$sansFontFamilyLight_italic:   "fira_sans_otlight_italic", Arial, sans-serif;
+$sansFontFamilyBold:   "fira_sans_otbold", Arial, sans-serif;
+$sansFontFamilyBold_italic:   "fira_sans_otbold_italic", Arial, sans-serif;
+$sansFontFamilyMedium:   "fira_sans_otmedium", Arial, sans-serif;
+$sansFontFamilyMedium_italic:   "fira_sans_otmedium_italic", Arial, sans-serif;
+
+
 $serifFontFamily:       "BreeSerif", Times New Roman, Times, serif !default;
 $handwriteFontFamily:   "Giveyouglory", Courier New, monospace !default;
 
@@ -317,5 +325,41 @@ $fluidGridGutterWidth768:      percentage($gridGutterWidth768/$gridRowWidth768) 
 
 
 
+
+// SASS Line
+// ---------------------------------------
+
+// Breakpoint sizes in ems. Note: not relative to root font-size.
+$break-0: 0;                          // Mobile first yo
+$break-1: (480 / 16) * 1em;           // 480px   -  Small tablet up
+$break-2: (768 / 16) * 1em;           // 768px   -  Large tablet up
+$break-3: (979 / 16) * 1em;          // 979px  -  Desktop up
+$break-4: (1200 / 16) * 1em;          // 1200px  -  Large desktop up
+
+// Root font-sizes. Set to half desired line-height of body text.
+$rootsize-0: 9;                      // 24px line-height body text
+$rootsize-1: 11;                      // 28px line-height body text
+$rootsize-2: 12;                      // 30px line-height body text
+$rootsize-3: 14;                      // 34px line-height body text
+$rootsize-4: 15;                      // 36px line-height body text
+
+// Control the line-length with max-width values for the container. Aim for 45-75 characters a line if possible, at smaller sizes type size is more important.
+$maxwidth-0: #{500 / $rootsize-0}rem; // 500px wide
+$maxwidth-1: #{520 / $rootsize-1}rem; // 520px wide
+$maxwidth-2: #{550 / $rootsize-2}rem; // 550px wide
+$maxwidth-3: #{620 / $rootsize-3}rem; // 620px wide
+$maxwidth-4: #{700 / $rootsize-4}rem; // 700px wide
+
+// Text colours. British English, there is totally a 'u' in there.
+$headingColour: #212121;
+$bodyColour: #313131;
+$linkColour: #0C89DB;
+$hoverColour: #212121;
+$white: #FFFFFF;
+
+// Background colours.
+$headBackgroundColour: #F8F7F3;
+$backgroundColour: #FCFCFC;
+$codeBackgroundColour: #002028;
 
 
