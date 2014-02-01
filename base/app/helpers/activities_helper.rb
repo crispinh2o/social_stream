@@ -5,7 +5,7 @@ module ActivitiesHelper
   # @param [Object]
   # @return [String]
   def like_status object
-    [ 'like', 'unlike' ].tap do |s|
+    [ 'star', 'star-o' ].tap do |s|
       if user_signed_in? && object.liked_by?(current_subject)
         s.reverse!
       end

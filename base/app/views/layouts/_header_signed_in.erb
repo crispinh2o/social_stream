@@ -1,4 +1,4 @@
-<header class="navbar">
+<header class="navbar navbar-fixed-top">
   <nav class="navbar-inner">
     <%= render partial: 'layouts/logo_in' %>
     <div class="brand"></div>
@@ -52,25 +52,25 @@
       </li>
       <li>
         <%= link_to root_path do %>
-          <i class='icon_navbar-home <%= current_header_icon_class(:home) %>' title="<%= t 'header.icon.home' %>"></i>
+          <i class='fa fa-home <%= current_header_icon_class(:home) %>' title="<%= t 'header.icon.home' %>"></i>
         <% end %>
       </li>   
       <li>
         <%= link_to contacts_path do %>
-          <i class='icon_navbar-contacts <%= current_header_icon_class(:contacts) %>' title="<%= t 'header.icon.contacts' %>"></i>
+          <i class='fa fa-group <%= current_header_icon_class(:contacts) %>' title="<%= t 'header.icon.contacts' %>"></i>
         <% end %>
       </li>
     
       <% if SocialStream.repository_models.present? %>
       <li>
       <%= link_to repository_path do %>
-        <i class='icon_navbar-resources <%= current_header_icon_class(:resources) %>' title="<%= t 'header.icon.repository' %>" ></i>
+        <i class='fa fa-folder <%= current_header_icon_class(:resources) %>' title="<%= t 'header.icon.repository' %>" ></i>
       <% end %>
       </li>
       <% end %>
       <li>
         <%= link_to conversations_path do %> 
-          <i class='icon_navbar-message <%= current_header_icon_class(:messages) %>' title="<%= t 'header.icon.messages' %>"></i>
+          <i class='fa fa-envelope <%= current_header_icon_class(:messages) %>' title="<%= t 'header.icon.messages' %>"></i>
         <% end %>
       </li>              
       <li> 
