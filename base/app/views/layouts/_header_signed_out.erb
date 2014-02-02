@@ -1,5 +1,38 @@
-<header class="headerFront <%= header_logo_class %>">
-  <%= render partial: 'layouts/logo_out' %>
-  <div class="brand">
-  </div>
+<header class="headerFront">
+  <%= link_to t('explore.link'), explore_path, class: 'btn' %>
+  <ul>
+    <li>
+      <%- if devise_mapping.registerable? && controller_name != 'registrations' %>
+        <%= link_to t('devise.links.sign_up'), new_registration_path(resource_name) %>
+      <% end -%>
+    </li>
+    <li class="login dropdown">
+      <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+        <%=t("sign_in")%>
+        <b class="caret"></b>
+      </a>
+      <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu">
+        <%= form_for User.new, :as => :user, :url => user_session_path do |f| %>
+          <%= f.email_field :email, :id => "username" %>
+          <%= f.password_field :password, :id => "password"  %>
+          <%= f.submit t(:sign_in), :class => ' btn btn-primary'%>
+          <label class="checkbox">
+            <input type="checkbox"> <%=t("activerecord.attributes.user.remember_me")%>
+          </label>
+          <%= link_to t('devise.links.forgot_password'), new_password_path(:user) %>
+        <% end %>
+        <%= javascript_tag do %>
+          $(function() {
+            if ("placeholder" in document.createElement("input")) {
+              $("#username").attr('placeholder', I18n.t('activerecord.attributes.user.email'));
+            } 
+            else 
+            { $("#username").watermark(I18n.t('activerecord.attributes.user.email'),"#666");
+            }
+            $("#password").watermark(I18n.t('activerecord.attributes.user.password'),"#666");
+          });
+        <% end %>
+      </ul>
+    </li>
+  </ul>
 </header>
