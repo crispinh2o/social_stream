@@ -1,9 +1,8 @@
 <section class="explanation">
-  <%= render partial: 'layouts/logo_out' %>
-  <div class="big">
+  <h3>
     <%= t 'frontpage.main_title' %>
-  </div>
-  <div class="lite">
+  </h3>
+  <h4>
     <%= t 'frontpage.stats', users: User.count, groups: Group.count %>
-  </div>
+  </h4>
 </section>

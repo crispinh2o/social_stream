@@ -6,16 +6,9 @@
 @media (min-width: 1200px)
 
   #conversations
-    @include grid-core-span(12, $fluidGridColumnWidth, $fluidGridGutterWidth)
     #toolbar
-      @include grid-core-span(2, $fluidGridColumnWidth, $fluidGridGutterWidth)
-      margin-left: 0px !important
     .conversations
-      @include grid-core-span(10, $fluidGridColumnWidth, $fluidGridGutterWidth)
-      margin-left: 0px !important
       .conversation
-        @include grid-core-span(12, $fluidGridColumnWidth, $fluidGridGutterWidth)
-        height: 85px
         margin-left: 0px !important
         .content_left
           .avatar
@@ -47,8 +40,6 @@
             
   #conversation
     .conversation_full
-      @include grid-core-span(8, $fluidGridColumnWidth, $fluidGridGutterWidth)
-      margin: 0 auto
       h3
         font-size: 27.5px
       .message
@@ -66,7 +57,6 @@
 
   #new_message
     #conversation
-      @include grid-core-span(8, $fluidGridColumnWidth, $fluidGridGutterWidth)
       float: left
 
 

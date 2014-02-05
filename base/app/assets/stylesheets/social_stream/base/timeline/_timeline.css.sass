@@ -7,7 +7,7 @@
     .comments
     .media
       .avatar
-        @include border-radius (5px)
+        @include border-radius
       .media-heading
         font-size: 12px
         color: #919191
@@ -53,12 +53,12 @@
             
           .tooltip
             @include opacity (90)
-            @include border-radius(5px)
+            @include border-radius
             background: $gray
             color: whitesmoke
             .audience_logo
               img
-                @include border-radius(5px)
+                @include border-radius
           
           textarea
             resize: none
@@ -66,7 +66,7 @@
 
         .comments
           .child
-            @include border-radius (5px)
+            @include border-radius
             background: #efefef
 
           .hidden_comments
@@ -86,14 +86,13 @@
 
   #new_comment
     .btn
-      @include buttonBackground($blueDark, $blue, $textColor: #fff, $textShadow: 0 -1px 0 rgba(0,0,0,.25))
 
 
   .new_comment
     .avatar
 
     .new_comment
-      @include border-radius (5px)
+      @include border-radius
       border: 1px solid #f9f9f9
 
 
@@ -105,13 +104,12 @@
 
    
 .activity_avatar
-  @include border-radius (5px)
+  @include border-radius
 
 
 .activity_content 
 
   h5
-    @include makeColumnoMargin(6, 0)
     font-size: 16px
     text-decoration: none
     &:hover
@@ -143,11 +141,11 @@
   .modal-body
     height: auto
     background-color: #222
-    @include border-radius(5px)
+    @include border-radius
     @include box-shadow(0px 0px 45px #000)
     #modal-carousel
       img
-        @include border-radius(3px)
+        @include border-radius
       .carousel-control
         line-height: 0
       

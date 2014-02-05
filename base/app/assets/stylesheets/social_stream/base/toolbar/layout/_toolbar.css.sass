@@ -29,8 +29,6 @@
       margin: 0
       padding-top: 6px
       li
-        @include grid-core-span(4, $fluidGridColumnWidth, $fluidGridGutterWidth)
-        @include grid-core-offset(1, $fluidGridColumnWidth, $fluidGridGutterWidth)
         float: left
         list-style: none
         img
@@ -77,8 +75,7 @@
       @extend .hidden-tablet
 
     input, select
-      @include makeColumnoMargin(2, 0)
-
+      
     .contact
       width: 140px
       padding-top: 0px

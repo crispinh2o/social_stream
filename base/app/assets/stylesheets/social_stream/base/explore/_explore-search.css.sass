@@ -3,7 +3,7 @@
 
 
   .menuv 
-    @include border-radius(7px)
+    @include border-radius
     border: 1px solid #f1f1f1 
     ul
       li 
@@ -64,7 +64,7 @@
     .avatar
       a
         img
-          @include border-radius (5px)
+          @include border-radius
     .data
       .name
         color: $black
@@ -79,24 +79,24 @@
       .date
         font-size: 12px
       .frequency
-        @include ellipsis
+        @include text-overflow
         font-size: 12px
         color: $grayLight
   
   .link
     .brifing
       h5
-        @include ellipsis
+        @include text-overflow
       a
-        @include ellipsis
+        @include text-overflow
 
 
   .comment
-    @include ellipsis
+    @include text-overflow
     a
-      @include ellipsis
+      @include text-overflow
 
   .post
-    @include ellipsis
+    @include text-overflow
     a
-      @include ellipsis
+      @include text-overflow

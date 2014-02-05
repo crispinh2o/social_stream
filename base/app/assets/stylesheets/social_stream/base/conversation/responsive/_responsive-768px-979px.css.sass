@@ -6,16 +6,9 @@
 @media (min-width: 768px) and (max-width: 979px)
 
   #conversations
-    @include grid-core-span(12, $fluidGridColumnWidth, $fluidGridGutterWidth)
     #toolbar
-      @include grid-core-span(2, $fluidGridColumnWidth, $fluidGridGutterWidth)
-      float: left
     div.conversations
-      @include grid-core-span(10, $fluidGridColumnWidth, $fluidGridGutterWidth)
-      float: left
       .conversation
-        @include grid-core-span(12, $fluidGridColumnWidth, $fluidGridGutterWidth)
-        height: 85px
         .content_left
           width: 34%
           margin-left: 10px
@@ -40,19 +33,14 @@
             width: 100%
   #conversation 
     .conversation_full
-      @include grid-core-span(10, $fluidGridColumnWidth, $fluidGridGutterWidth)
-      float: left
       h3
         width: 96%
 
 
   #new_message
-    @include grid-core-span(12, $fluidGridColumnWidth, $fluidGridGutterWidth)
     #toolbar
-      @include grid-core-span(2, $fluidGridColumnWidth, $fluidGridGutterWidth)
       float: left
     #conversation
-      @include grid-core-span(10, $fluidGridColumnWidth, $fluidGridGutterWidth)
       float: left
       margin-left: 0px
       label
@@ -64,13 +52,3 @@
         &[type="text"]
           width: 99%
   
-  
-  #conversation
-    @include grid-core-span(12, $fluidGridColumnWidth, $fluidGridGutterWidth)
-    #toolbar
-      @include grid-core-span(2, $fluidGridColumnWidth, $fluidGridGutterWidth)
-      float: left
-    #conversation_full
-      @include grid-core-span(10, $fluidGridColumnWidth, $fluidGridGutterWidth)
-      float: left
-      margin-left: 0px

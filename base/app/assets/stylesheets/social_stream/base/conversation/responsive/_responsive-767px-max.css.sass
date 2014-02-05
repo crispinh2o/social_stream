@@ -5,36 +5,23 @@
 
 @media (max-width: 767px)
 
-  #conversation
-    h2
-    input
-      &[type="submit"]
-        @include grid-core-span(12, $fluidGridColumnWidth, $fluidGridGutterWidth)
-
 
   #conversations,
   #conversation,
   #new_message
-    @include grid-core-span(12, $fluidGridColumnWidth, $fluidGridGutterWidth)
-    margin-left: 0px
-    float: none
     #toolbar
-      @include grid-core-span(12, $fluidGridColumnWidth, $fluidGridGutterWidth)
       background-color: $white
-      @include border-radius(5px)
+      @include border-radius
       display: block !important
       .toolbar_menu
-        @include grid-core-span(12, $fluidGridColumnWidth, $fluidGridGutterWidth)  
         margin-left: 0px
       ul
-        @include grid-core-span(12, $fluidGridColumnWidth, $fluidGridGutterWidth)
         height: 60px
         margin-left: auto
         margin-right: auto
         margin-top: 13px
         padding-left: 3%
         li
-          @include grid-core-span(3, $fluidGridColumnWidth, $fluidGridGutterWidth)
           display: inline
           margin-bottom: 0px
           float: left
@@ -49,14 +36,9 @@
               display: block
               margin-left: auto
               margin-right: auto
-    form.new_message
-      @include grid-core-span(12, $fluidGridColumnWidth, $fluidGridGutterWidth)
-      margin-left: 0
+   
     .conversations
-      @include grid-core-span(12, $fluidGridColumnWidth, $fluidGridGutterWidth)
-      margin-top: 26px
       .conversation
-        @include grid-core-span(12, $fluidGridColumnWidth, $fluidGridGutterWidth)
         .content_left
           width: 60px
           margin-right: 13px
@@ -71,10 +53,7 @@
             float: right
             margin: 0
     
-  #conversation 
-    .conversation_full
-      @include grid-core-span(12, $fluidGridColumnWidth, $fluidGridGutterWidth)
-      
+ 
   #new_message
     label
       margin-bottom: 0px
@@ -95,7 +74,6 @@
   #conversations,
   #conversation
     .toolbar-home
-      @include grid-core-span(12, $fluidGridColumnWidth, $fluidGridGutterWidth)
       ul.nav
         li
           display: inline
@@ -111,7 +89,7 @@
           header
             width: 54px
           .date
-            @include ellipsis
+            @include text-overflow
         .content_right 
           width: 69%
           margin-left: 10px

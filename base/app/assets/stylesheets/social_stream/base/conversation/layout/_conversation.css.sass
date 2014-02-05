@@ -1,9 +1,7 @@
 @import "jquery.cleditor"
 
 #conversations
-  @include grid-core-span(12, $fluidGridColumnWidth, $fluidGridGutterWidth)
   .conversations
-    @include grid-core-span(10, $fluidGridColumnWidth, $fluidGridGutterWidth)
     .conversation
       height: 85px
       clear: both
@@ -45,7 +43,7 @@
        
 
   form.new_message
-    @include makeColumnoMargin(6, 0)
+ 
     margin-left: 20px
     .btn
       margin: 17px 10px 0 0
@@ -55,13 +53,10 @@
   .cleditorMain
     width: 100%!important
 .conversations
-  @include makeColumnoMargin(10, 0)
-
+ 
 #conversation
-  @include grid-core-span(12, $fluidGridColumnWidth, $fluidGridGutterWidth)
   .conversation_full
-    @include grid-core-span(10, $fluidGridColumnWidth, $fluidGridGutterWidth)
-    float: left
+
     h4
       font-family: "OpenSansLight"
     .participants

@@ -2,15 +2,13 @@
 
 #calendar
   .fc-button.fc-state-default 
-    @include btn-primary
     color: $blue
-    @include border-radius(0)
+    @include border-radius
 
   .fc-button.fc-state-active 
     @include btn-secundary
     color: $white
   .fc-button.fc-state-disabled 
-    @include btn-primary
     background-color: $blue
     color: $white
 
@@ -18,13 +16,11 @@
     @include box-shadow(none)
 
   .fc-button.fc-corner-left 
-    @include border-top-left-radius (4px)
-    @include border-bottom-left-radius (4px)
+
 
   .fc-button.fc-corner-right 
     // .btn-group > .btn:last-child, .btn-group > .dropdown-toggle
-    @include border-top-right-radius (4px)
-    @include border-bottom-right-radius (4px)
+
 
   .fc-event-inner
     background-color: $gray

@@ -4,7 +4,6 @@
 #home,
 #time-line,
   .timeline
-    @include grid-core-span(12, $fluidGridColumnWidth, $fluidGridGutterWidth)
     .comments
     .media
       padding-bottom: 13px
@@ -94,7 +93,7 @@
         margin-left: 9px
         width: 50px !important 
     .new_comment
-      @include border-radius (5px)
+      @include border-radius
       margin: -20px 0 0 82px
       width: 84%
 
@@ -118,18 +117,15 @@
    
 
 .activity_avatar
-  @include border-radius (5px)
-  @include makeColumn(1, 0)
+  @include border-radius
   display: inline
   margin: 13px -10px 0px 4px
 
-.activity_content 
-  @include makeColumn(7, 0)
+.activity_content
   display: inline-block
   margin-left: 5px
 
   h5
-    @include makeColumnoMargin(6, 0)
 
   .x
     margin-left: 0px
@@ -143,7 +139,6 @@
 
     
 .activity_options
-  @include makeColumn(6, 0)
   margin-left: 56px 
   .post_time_ago
     display: inline

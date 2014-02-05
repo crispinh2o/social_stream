@@ -7,7 +7,6 @@
 
   #new_site_client
     .new_site_client
-      @include grid-core-span(12, $fluidGridColumnWidth, $fluidGridGutterWidth)
       h1
         @extend .hidden-phone
         @extend .hidden-tablet
@@ -19,10 +18,8 @@
           input
             &[type="file"],
             &[type="text"]
-              @include grid-core-span(11, $fluidGridColumnWidth, $fluidGridGutterWidth)
               margin-left: 2.9%
           textarea
-            @include grid-core-span(11, $fluidGridColumnWidth, $fluidGridGutterWidth)
             margin-left: 2.9%
 
 

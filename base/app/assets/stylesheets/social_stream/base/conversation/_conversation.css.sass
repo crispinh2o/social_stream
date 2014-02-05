@@ -9,7 +9,7 @@
           width: 120px
           h5 
             a
-              @include ellipsis
+              @include text-overflow
           .date
             font-size: 11px
             color: #888
@@ -20,13 +20,13 @@
           font-weight: normal
           font-size: 14px
           a
-            @include ellipsis
+            @include text-overflow
             font-size: 15px
             font-weight: bold
             &:hover
               text-decoration: none
         .briefing
-          @include ellipsis
+          @include text-overflow
           color: $gray
         .date
           color: $gray
@@ -36,7 +36,7 @@
   
 #ck_editor
   .cleditorMain
-    @include border-radius(5px) 
+    @include border-radius
 .conversations
   .conversation
     @include opacity (50)
@@ -46,12 +46,12 @@
 
 .conversation_full
   h3
-    @include ellipsis
+    @include text-overflow
   .participants
-    @include border-radius(5px)
+    @include border-radius
     background-color: #f1f1f1
     img
-      @include border-radius (5px)
+      @include border-radius
   .soften
     border-color: $white
 
@@ -60,13 +60,13 @@
       font-size: 16px
       color: $gray
     .cleditorMain
-      @include border-radius(5px) 
+      @include border-radius 
       border-color: #c5c5c5
     .actions
       margin-top: 10px
       input
         &[type="submit"]
-          @include border-radius(5px)
+          @include border-radius
 
 
 
@@ -76,7 +76,7 @@
     .media
       .pull-left
         img
-          @include border-radius (5px)
+          @include border-radius
       .date
         color: #999
         font-size: 13px

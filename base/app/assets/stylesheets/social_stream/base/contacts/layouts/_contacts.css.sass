@@ -3,10 +3,8 @@ input#group_name
   width: 93% !important 
 
 #contacts
-  @include grid-core-span(12, $fluidGridColumnWidth, $fluidGridGutterWidth)
-
+ 
   .contacts
-    @include grid-core-span(10, $fluidGridColumnWidth, $fluidGridGutterWidth)
     float: left
     margin-left: 2%
     .btn-group
@@ -30,12 +28,10 @@ input#group_name
         padding-bottom: 50px
 
         .contact
-          @include contact-layout
-        
+    
 
 #contact-form
   ul
-    @include makeColumnoMargin(3, 0)
     input
       &[type="check"]
         display: inline
@@ -44,7 +40,6 @@ input#group_name
       margin-left: 10px
 
   .new_contact_text_area
-    @include makeColumn(6, 0)
     @include clearfix
     height: 200px 
   input
@@ -76,7 +71,6 @@ input#group_name
     margin-bottom: 20px
   .new_relation_custom
     .btn
-      @include btn-secundary 
       float: right
       margin: 7px 0px 0 0
     
@@ -87,7 +81,6 @@ input#group_name
 
 
 #permissions
-  @include makeColumn(4, 0)
   h4
     text-align: left
   li

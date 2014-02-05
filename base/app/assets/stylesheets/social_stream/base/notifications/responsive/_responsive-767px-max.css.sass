@@ -9,12 +9,11 @@
     #toolbar
       display: none
     .notifications
-      @include grid-core-span(12, $fluidGridColumnWidth, $fluidGridGutterWidth)
       margin-left: 0
       .list
         .notification
           .notification
-            @include ellipsis
+            @include text-overflow
           .date-ago
             float: none
             display: block

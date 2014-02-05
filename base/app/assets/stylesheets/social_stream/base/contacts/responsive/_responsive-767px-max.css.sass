@@ -12,9 +12,7 @@
 
   #relation_customs
     .relation_customs
-      @include grid-core-span(12, $fluidGridColumnWidth, $fluidGridGutterWidth)
-      @include gradient-vertical($startColor: #fff, $endColor: rgba(250, 250, 250, .01))
-      @include border-radius(5px)
+      
       margin-top: 20px
       margin-left: 0
       h2
@@ -30,12 +28,12 @@
         &[type="radio"]
           margin-right: 0px
       label
-        @include ellipsis
+        @include text-overflow
         width: 50%
     #permissions
       .permissions ul li
         label
-          @include ellipsis
+          @include text-overflow
           width: 84%
 // UP TO LANDSCAPE PHONE
 // ---------------------

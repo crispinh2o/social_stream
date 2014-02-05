@@ -7,8 +7,7 @@
 
   #settings
     .settings
-      @include grid-core-span(12, $fluidGridColumnWidth, $fluidGridGutterWidth)
-      @include grid-core-offset(1, $fluidGridColumnWidth, $fluidGridGutterWidth)
+      @include make-lg-column(12, $gutter: $grid-gutter-width)
       border-left: 1px solid #c4c4c4
       border-right: 1px solid #c4c4c4
       border-bottom: 1px solid #c4c4c4
@@ -31,5 +30,3 @@
       .edit_user
         .email_form_content
           .form_label
-            @include grid-core-offset(2, $fluidGridColumnWidth, $fluidGridGutterWidth)
- 

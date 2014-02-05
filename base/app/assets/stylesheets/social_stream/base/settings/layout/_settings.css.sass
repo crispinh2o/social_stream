@@ -3,7 +3,7 @@
     @include hidden-phone
     @include hidden-tablet
   .settings
-    @include grid-core-span(10, $fluidGridColumnWidth, $fluidGridGutterWidth)
+    @include make-lg-column(10, $gutter: $grid-gutter-width)
     float: left
     margin-left: 2%
     h2
@@ -19,7 +19,7 @@
       .settings_content
         padding: 0px 15px 0px
         .accordion-toggle
-          @include ellipsis
+          @include text-overflow
         form
           margin-bottom: 0px
           margin-top: 12px

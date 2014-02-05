@@ -1,7 +1,6 @@
 #frontpage,
 #new_session
-  @include grid-core-span(12, $fluidGridColumnWidth, $fluidGridGutterWidth)
-
+  
   .explanation
     clear: both
     text-align: center
@@ -9,16 +8,15 @@
       margin: 3px 0px 23px 0
 
   #presentation
-    @include grid-core-span(12, $fluidGridColumnWidth, $fluidGridGutterWidth)
-    @include centered
+    @include center-block
     float: left
     background: none
     border: none
-    .characteristics
-      @include makeColumn(4,0)
-      margin-left: 2.9%
-      &:first-child
-        margin-left: 4% 
+    #characteristics
+      .characteristics
+        margin-left: 2.9%
+        &:first-child
+          margin-left: 4% 
 
   #sign_in
     width: 27%

@@ -3,10 +3,9 @@
     ul
       background: #f9f9f9
       li
-        @include btn-primary
-        @include border-radius(5px)
+        @include border-radius
         a
-          @include ellipsis
+          @include text-overflow
         &:hover
           a
             color: $white
@@ -34,7 +33,7 @@
 #toolbar
   h5
     font-size: 16px
-    @include ellipsis
+    @include text-overflow
     a
       color: #666
       &:hover
@@ -52,7 +51,7 @@
     ul
       border-right: 1px solid #ddd
       img
-        @include border-radius(5px)
+        @include border-radius
     .contacts-more,
     .groups-more
       text-align: right
@@ -64,14 +63,14 @@
   .logo_home
     font-size: 26px
     line-height: 49px
-    @include ellipsis
+    @include text-overflow
     img
-      @include border-radius(5px)
+      @include border-radius
     .subject-name
-      @include ellipsis
+      @include text-overflow
     .subject-name-phone
       font-size: 16px
-      @include ellipsis
+      @include text-overflow
       a
         color: #666
         &:hover
