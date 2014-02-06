@@ -1,29 +1,24 @@
-.headerFront
-  .logo
+header.headerFront
+  padding: 12px 0 0 0
+  a
     display: inline !important
     margin-top: 4px
-  .brand
-    display: inline-block
-    
-.headerFront.in
-  .logo
-    width: 300px
-    margin-bottom: 40px
-
+  ul
+    float: right
+    margin-right: 20px
+    li
+      display: inline
+      min-width: 100px
+      margin-left: 10px
 
 header
   .navbar-inner
-    .logo,
-    .logo-responsive
+    .logo
       float: left
       width: 40px
-
       h4
         @extend .hidden-phone
         @extend .hidden-tablet
-
-    .logo-responsive
-      @extend .hidden-desktop
 
     .dropdown
       margin-top: 7px
@@ -34,6 +29,7 @@ header
         
       .dropdown-toggle
         margin-right: 5px
+
 
 .search-mobile
   @extend .hidden-desktop

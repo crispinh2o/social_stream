@@ -1,22 +1,11 @@
 #frontpage,
 #new_session
-  
-  .explanation
-    clear: both
-    text-align: center
-    .lite
-      margin: 3px 0px 23px 0
-
-  #presentation
+  .logo-out
+    @include make-row($gutter: $grid-gutter-width)
+    @include make-sm-column(4, $gutter: $grid-gutter-width)
     @include center-block
-    float: left
-    background: none
-    border: none
-    #characteristics
-      .characteristics
-        margin-left: 2.9%
-        &:first-child
-          margin-left: 4% 
+    @include clearfix
+
 
   #sign_in
     width: 27%
@@ -44,18 +33,19 @@
 
 
 
-  #presentation
-    display: block
-    clear: both
-    margin-top: 35px
-    .characteristics
-      float: left
-      padding: 10px
-      margin: 10px 0 0 20px
-      header
-        margin: 5px 0
-      p
-        padding: 9px 0px 5px 0px
+#presentation
+  @include make-sm-column(12, $gutter: $grid-gutter-width)
+  @include make-md-column(12, $gutter: $grid-gutter-width)
+  @include make-lg-column(12, $gutter: $grid-gutter-width)
+  margin-top: 35px
+  .characteristic
+    @include make-sm-column(4, $gutter: $grid-gutter-width)
+    @include make-md-column(4, $gutter: $grid-gutter-width)
+    @include make-lg-column(4, $gutter: $grid-gutter-width)
+    header
+      margin: 5px 0
+    p
+      padding: 9px 0px 5px 0px
 
 
 

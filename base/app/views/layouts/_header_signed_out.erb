@@ -11,7 +11,7 @@
         <%=t("sign_in")%>
         <b class="caret"></b>
       </a>
-      <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu">
+      <ul class="dropdown-menu dropdown-menu-right" role="menu" aria-labelledby="dropdownMenu">
         <%= form_for User.new, :as => :user, :url => user_session_path do |f| %>
           <%= f.email_field :email, :id => "username" %>
           <%= f.password_field :password, :id => "password"  %>
